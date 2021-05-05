@@ -36,6 +36,7 @@ class AudioCircle {
 const sketch = (p: p5) => {
   let mike = null;
   let audioCircle;
+  let on = false;
 
   p.setup = () => {
     p.createCanvas(innerWidth, innerHeight);
@@ -49,11 +50,17 @@ const sketch = (p: p5) => {
   };
 
   p.draw = () => {
-    const volume = mike.getLevel();
-    audioCircle.draw(volume);
+    if (on) {
+      const volume = mike.getLevel();
+      audioCircle.draw(volume);
+    }
 
     // // [...Array(innerWidth).keys()].forEach(i => {});
   };
+
+  p.mouseClicked = () => {
+    on = !on;
+  }
 };
 
 new p5(sketch);
