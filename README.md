@@ -1,4 +1,6 @@
-## setup
+# sandbox p5.js
+
+## template
 
 main.ts
 
@@ -18,3 +20,17 @@ const sketch = (p: p5) => {
 
 new p5(sketch);
 ```
+
+---
+
+### volume-circle
+
+![](images/VolumeCircle.jpg)
+
+### stroke
+
+![](images/Stroke.jpg)
+
+### mouse-radiation
+
+![](images/MouseRadiation.jpg)

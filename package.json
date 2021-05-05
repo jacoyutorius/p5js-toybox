@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html --open",
+    "stroke": "parcel src/stroke.html --open",
+    "volume-circle": "parcel src/volume-circle.html --open",
+    "draw-curve": "parcel src/draw-curve.html --open",
+    "mouse-radiation": "parcel src/mouse-radiation.html --open",
     "build": "parcel build src/index.html"
   },
   "author": "",
